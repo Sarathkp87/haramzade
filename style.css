@@ -1,0 +1,313 @@
+/* Add this in your <style> section or in a separate CSS file */
+/* @import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities'; */
+/* Your additional custom styles here */
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Josefin+Sans&family=Tilt+Prism&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bricolage+Grotesque:opsz@10..48&family=Tilt+Prism&display=swap');
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 100; 
+}
+
+h1{
+    font-family: 'Tilt Prism', cursive;
+}
+p{
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+h2{
+    font-family: 'Bebas Neue', sans-serif;
+}.nav-link-hover {
+    transition: box-shadow 0.3s ease-in-out; /* Add smooth transition effect */
+  }
+  
+  .nav-link-hover:hover {
+    box-shadow: 0 0 10px rgba(203, 238, 238, 0.897); /* Add a shadow on hover */
+  }
+  
+  .harampara{
+    text-align: justify;
+  }
+    /* Your existing CSS variables and styles here */
+
+    /* Media Queries for Responsive Design */
+    @media (max-width: 768px) {
+        /* Stack elements vertically on mobile */
+        .circle-container {
+            flex-direction: column;
+        }
+
+        /* Full width for both image and text on mobile */
+        .circle-image,
+        .circle-text {
+            width: 100%;
+        }
+    }
+
+    /* For larger screens, display both image and text in the same column */
+    @media (min-width: 769px) {
+        .circle-container {
+            flex-direction: column; /* Stack elements vertically */
+        }
+
+        .circle-image,
+        .circle-text {
+            width: 100%; /* Make them full width within the column */
+        }
+    }
+
+    /* Styles for mobile screens */
+@media (max-width: 767px) {
+    /* Add your mobile styles here */
+    .harampara {
+      font-size: 14px; /* Adjust the font size for mobile */
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: Arial, sans-serif;
+}
+
+.roadmap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+    width: 80%;
+}
+
+.main-road {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.main-marker {
+    background-color: #007BFF;
+    color: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.road-divider {
+    flex: 1;
+    height: 2px;
+    background-color: #007BFF;
+}
+
+.info {
+    display: none;
+    background-color: rgba(0, 123, 255, 0.8);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    text-align: center;
+}
+
+.main-marker:hover .info {
+    display: block;
+}
+/* Add this CSS within your media query for mobile view */
+@media (max-width: 768px) {
+    .main-marker {
+      width: 60px; /* Adjust the size as per your preference */
+      height: 60px; /* Adjust the size as per your preference */
+      font-size: 18px; /* Adjust the font size as per your preference */
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+        /* Add custom styles */
+        .branch-container {
+          background-color: #0D6EFD; /* Blue background color */
+          border-radius: 10px;
+          padding: 20px;
+          color: #fff; /* White text color */
+          transition: transform 0.3s ease-in-out;
+          display: flex;
+          align-items: center;
+      }
+
+      /* Add hover styles */
+      .branch-container:hover {
+          background-color: #f1c40f; /* Yellow background color on hover */
+          transform: scale(1.05);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Style the section title */
+      .branch-title {
+          font-size: 24px;
+          margin-bottom: 10px;
+      }
+
+      /* Style the section description */
+      .branch-description {
+          font-size: 16px;
+          margin-bottom: 20px;
+      }
+
+      /* Style the divider icon */
+      .branch-icon {
+          font-size: 36px; /* Larger icon size */
+          border: 2px solid #fff; /* White border */
+          border-radius: 50%; /* Round border */
+          padding: 10px; /* Adjust as needed */
+          margin-right: 20px; /* Spacing between icon and text */
+      }
+
+      /* Add padding to the spacer widgets for spacing between sections */
+      .branch-spacer {
+          height: 20px; /* Adjust as needed */
+      }
+
+
+
+      /* commuity */
+      /* Default styles */
+#community {
+    text-align: center;
+  }
+  
+  /* Media query for medium-sized screens (tablets) */
+  @media (max-width: 768px) {
+    #community-image {
+      display: none; /* Hide the image on medium-sized screens */
+    }
+  
+    #community h2 {
+      font-size: 30px;
+    }
+  
+    #community h4 {
+      font-size: 16px;
+      margin: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    #community .btn {
+      font-size: 16px;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+  }
+  
+  /* Media query for small screens (mobile) */
+  @media (max-width: 576px) {
+    #community h2 {
+      font-size: 24px;
+    }
+  
+    #community h4 {
+      font-size: 14px;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+      /* body {
+        font-family: "Sora", sans-serif;
+        color: #A6ACB8;
+        background-color: #060B17;
+    } */
+
+    .partners-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .partner {
+        flex-basis: calc(20% - 20px);
+        margin-bottom: 20px;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .partner img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .partner:hover {
+        transform: scale(1.1);
+        filter: brightness(1.2);
+    }
+
+    h2 {
+        text-align: center;
+        color: #ffffff;
+    }
